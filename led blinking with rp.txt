@@ -1,0 +1,16 @@
+from machine import Pin
+import utime
+
+# Define the pin number for the LED
+led_pin = Pin(5, Pin.OUT)
+
+# Main loop
+while True:
+    # Turn on the LED
+    led_pin.value(1)
+    # Wait for 1 second
+    utime.sleep(1)
+    # Turn off the LED
+    led_pin.value(0)
+    # Wait for 1 second
+    utime.sleep(1)
